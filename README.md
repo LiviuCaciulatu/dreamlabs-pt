@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Fake Store CRUD React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple, modular React + TypeScript frontend application that demonstrates basic CRUD (Create, Read, Update, Delete) operations using the public [Fake Store API](https://fakestoreapi.com/). It is designed for clarity, modularity, and maintainability, making it a great starting point for learning or extending with new features.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **List Products:** View all products from the Fake Store API.
+- **Create Product:** Add a new product using the API.
+- **Delete Product:** Remove a product from the list and the API.
+- **Retrieve Product by ID:** Search for and display a product by its ID.
+- **Modular Components:** Each feature is implemented as a separate component for easy maintenance and extension.
+- **TypeScript:** All code is fully typed for safety and developer experience.
+- **SCSS Modules:** Component-level styles use SCSS modules for encapsulation.
+- **Global SCSS Variables:** Theming and style consistency are managed via a global SCSS variables file.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `src/components/` — Modular components for Create, List, Details, and Search
+- `src/styles/_variables.scss` — Global SCSS variables for consistent theming
+- `src/types.ts` — TypeScript types for API data
+- `src/App.tsx` — Main app logic and state management
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Scripts
 
-### `npm run build`
+- `npm start` — Run the app in development mode
+- `npm run build` — Build the app for production
+- `npm test` — Run tests (if available)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Customization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Update or add SCSS variables in `src/styles/_variables.scss` for theming.
+- Add new features by creating new components in `src/components/`.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Fake Store API Documentation](https://fakestoreapi.com/)
+- [React Documentation](https://reactjs.org/)
+- [TypeScript Documentation](https://www.typescriptlang.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
