@@ -1,6 +1,6 @@
 import React from 'react';
 import { Product } from '../../types';
-import './details.module.scss';
+import styles from './details.module.scss';
 
 interface ProductDetailsProps {
   product: Product | null;
@@ -9,13 +9,13 @@ interface ProductDetailsProps {
 const Details: React.FC<ProductDetailsProps> = ({ product }) => {
   if (!product) return null;
   return (
-    <div className="card">
-      <h2>Selected Item</h2>
-      <p><strong>{product.title}</strong></p>
-      <img src={product.image} alt={product.title} style={{ width: '100px' }} />
-      <p>{product.description}</p>
-      <p>Category: {product.category}</p>
-      <p>Price: ${product.price.toFixed(2)}</p>
+    <div className={styles.detailsCard}>
+      <h2 className={styles.detailsCardTitle}>Selected Item</h2>
+      <p className={styles.detailsCardName}><strong>{product.title}</strong></p>
+      <img className={styles.detailsCardImage} src={product.image} alt={product.title} style={{ width: '100px' }} />
+      <p className={styles.detailsCardDesc}>{product.description}</p>
+      <p className={styles.detailsCardCategory}>Category: {product.category}</p>
+      <p className={styles.detailsCardPrice}>Price: ${product.price.toFixed(2)}</p>
     </div>
   );
 };

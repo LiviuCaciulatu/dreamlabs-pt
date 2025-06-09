@@ -1,1 +1,28 @@
 // SCSS for details component
+
+.detailsCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailsCardTitle,
+.detailsCardName,
+.detailsCardDesc,
+.detailsCardCategory,
+.detailsCardPrice {
+  text-align: center;
+  width: 100%;
+}
+
+.detailsCardImage {
+  display: block;
+  margin: 12px auto;
+  max-width: 120px;
+}
